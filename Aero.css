@@ -76,7 +76,7 @@ h2, h3 {
 .balance-card {
     background-color: #f9fbfd;
     border: 1px solid #dbe3ec;
-    
+    Padding: 30px;
     border-radius: 8px;
     flex: 1 1 250px;
     text-align: center;
