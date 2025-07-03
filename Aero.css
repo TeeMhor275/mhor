@@ -25,10 +25,11 @@ body {
     align-items: center;
     border-bottom: 5px solid #FFFF00; /* Yellow bottom border */
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .logo {
-    font-family: 'Slabo+27px', Georgia, serif; /* Clarendon-like font with fallback */
+    font-family: 'Slabo 27px', Georgia, serif; /* Clarendon-like font */
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 1px; /* Slight spacing for logo effect */
@@ -50,125 +51,50 @@ body {
     background-color: #FFFFFF; /* White lines for hamburger menu */
 }
 
-.container {
+/* Joint Account Summary Styles */
+.summary-header {
+    font-family: 'Slabo 27px', Georgia, serif; /* Clarendon-like font */
+    font-size: 2rem;
+    color: #333333; /* Dark text for header */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #333; /* Dark background from image */
+    color: #FFFFFF; /* White text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.summary-container {
     max-width: 800px;
     margin: auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid #d1d1d1;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-h2, h3 {
-    font-family: 'Slabo 27px', Georgia, serif; /* Clarendon-like font with fallback */
-    color: #CD1409; /* Wells Fargo red */
-}
-
-.balance-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-    margin-bottom: 35px;
-}
-
-.balance-card {
-    background-color: #f9fbfd;
-    border: 1px solid #dbe3ec;
     padding: 20px;
-    border-radius: 8px;
-    flex: 1 1 250px;
+}
+
+.account-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0; /* Light gray border */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    min-width: 0; /* Prevent overflow on narrow screens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.balance-card h2 {
-    font-size: 1.1rem;
-    color: #153E75; /* Wells Fargo blue */
-}
-
-.balance-card .amount {
-    font-size: 1.6rem;
-    color: #1A8245; /* Darker green for balance */
-    margin-top: 10px;
-    font-family: Verdana, Arial, sans-serif; /* Consistent with body */
-}
-
-.total-balance {
-    flex: 1 1 100%;
-    text-align: center;
-    margin-top: 10px;
-    background: #f0f4f8;
-    border: 1px solid #c6d4e1;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.total-balance h3 {
-    color: #153E75; /* Wells Fargo blue */
-}
-
-.total-amount {
-    font-size: 2.2rem;
-    color: #153E75; /* Wells Fargo blue */
-    margin-top: 5px;
-    font-family: Verdana, Arial, sans-serif;
-}
-
-.transactions {
-    margin-bottom: 30px;
-}
-
-.transactions h3 {
-    color: #CD1409; /* Wells Fargo red */
-    margin-bottom: 12px;
-}
-
-.transactions ul {
-    list-style: none;
-}
-
-.transactions li {
-    background-color: #fff5f5; /* Light red background for transactions */
-    padding: 14px;
-    border-left: 5px solid #CD1409; /* Wells Fargo red for border */
+.account-card h3 {
+    font-size: 1.2rem;
+    color: #153E75; /* Wells Fargo blue for names */
     margin-bottom: 10px;
-    border-radius: 4px;
-    font-size: 0.95rem;
+    font-family: 'Slabo 27px', Georgia, serif;
+}
+
+.account-card .amount {
+    font-size: 1.5rem;
+    color: #1A8245; /* Green for amounts */
     font-family: Verdana, Arial, sans-serif;
 }
 
-.note {
-    font-style: italic;
-    color: #555555;
-    margin-left: 10px;
-    font-family: Verdana, Arial, sans-serif;
-}
-
-.actions {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-button {
-    background-color: #CD1409; /* Wells Fargo red */
-    color: white;
-    border: none;
-    padding: 12px 22px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-family: Verdana, Arial, sans-serif;
-}
-
-button:hover {
-    background-color: #FFE033; /* Slightly darker yellow for better contrast */
-    color: #153E75; /* Wells Fargo blue */
+.total-balance .amount {
+    color: #153E75; /* Blue for total balance amount */
 }
 
 /* Footer Styles */
@@ -190,12 +116,11 @@ footer {
     color: #555555;
     text-decoration: none;
     margin: 0 10px;
-    font-family: Verdana, Arial, sans-serif;
 }
 
 .footer-links a:hover {
     color: #CD1409; /* Wells Fargo red on hover */
-    text-decoration: underline; /* Add underline for better UX */
+    text-decoration: underline;
 }
 
 hr {
@@ -211,26 +136,29 @@ hr {
         padding: 10px;
     }
 
-    .header .logo {
+    .logo {
         font-size: 1.5rem; /* Scale down on mobile */
     }
 
-    .balance-section {
-        flex-direction: column;
-        align-items: center;
+    .summary-header {
+        font-size: 1.5rem; /* Reduce header size on mobile */
+        padding: 8px;
     }
 
-    .actions {
-        flex-direction: column;
-        align-items: center;
+    .summary-container {
+        padding: 10px; /* Reduce padding on mobile */
     }
 
-    button {
-        width: 90%;
-        max-width: 300px;
+    .account-card {
+        padding: 15px; /* Reduce padding in cards */
+        margin-bottom: 15px; /* Reduce margin between cards */
     }
 
-    .container {
-        padding: 15px; /* Reduce padding on mobile */
+    .account-card h3 {
+        font-size: 1rem; /* Smaller name text */
+    }
+
+    .account-card .amount {
+        font-size: 1.2rem; /* Smaller amount text */
     }
 }
