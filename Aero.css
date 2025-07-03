@@ -11,7 +11,7 @@ body {
     font-family: Verdana, Arial, sans-serif; /* Wells Fargo Sans-like font for body */
     background-color: #f4f6f8; /* Neutral background */
     color: #333333; /* Darker gray for body text readability */
-    padding: 20px;
+    
     font-size: 16px;
     line-height: 1.5;
 }
