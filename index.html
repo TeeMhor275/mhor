@@ -3,69 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookAir</title>
-    <link rel="stylesheet" href="Aero.css">
-    <!-- Font Import from Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-        rel="stylesheet">
-    
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-        <!-- linking css file to HTML -->
-    <link rel="stylesheet" href="./assets/css/Aero.css">
+    <title>Wells Fargo Account Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-    <header>
-        <div class="logo">
-           <h1>Book<span class="logo">Air</span></h1>
-            <div class="navbar-content">
-                <ul class="navbar-links">
-                      <li>Home
-                        <div class="navbar-links-dropdown"></div>
-                    </li>
-                    <li>Pages <i class="bi bi-chevron-down"></i>
-                    </li>
-                    <li>Plan <i class="bi bi-chevron-down"></i></li> 
-                    <li>Manage <i class="bi bi-chevron-down"></i></li>
-                    <li>Destinations <i class="bi bi-chevron-down"></i></li>
-                    <li>Blog <i class="bi bi-chevron-down"></i></li>
-                </ul>
-                <div class="navbar-icons">
-                 <a href="#" class="icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="icon"><i class="fas fa-user-circle"></i></a>
-                </div>
-                <div class="navbar-cta">
-                    <p href="#">Contact us <i class="bi bi-arrow-up-right"></i> </p>
-                </div>
-
-            </div>
+    <header class="header">
+        <div class="logo">WELLS FARGO</div>
+        <div class="menu-icon">
+            
         </div>
     </header>
-    <!-- Hero Section -->
-     <section class="hero-section">
-  <div class="hero-content">
-    <h1>Explore The Globe & Find The Ultimate</h1>
-    <p>Airlines play a crucial role in global connectivity, enabling millions of passengers to travel efficiently across countries and continents. They offer various services, from budget-friendly options to luxurious first-class experiences.</p>
-    <div class="hero-buttons">
-      <a href="#" class="btn primary">Book Now <i class="bi bi-arrow-up-right"></i> </a>
-      <a href="#" class="btn secondary">Get Started <i class="bi bi-arrow-up-right"></i> </a>
+
+     <div class="container">
+    <h1>Joint Account Summary</h1>
+    
+    <div class="balance-section">
+      <div class="balance-card">
+        <h2>Audrey Leon</h2>
+        <p class="amount">$3,480.50</p>
+      </div>
+
+      <div class="balance-card">
+        <h2>Robert Leon</h2>
+        <p class="amount">$45,600.30</p>
+      </div>
+
+      <div class="total-balance">
+        <h3>Total Balance</h3>
+        <p class="total-amount">$49,080.80</p>
+      </div>
     </div>
-  </div>
-  <div class="hero-images">
-    <div class="image-row">
-      <img src="b-image-a.jpg" alt="Woman at Airport">
-      <img src="b-image-b.jpg" alt="Masked traveler">
+
+    <div class="transactions">
+      <h3>Recent Transaction</h3>
+      <ul>
+        <li><strong>Audrey:</strong> -$186.00 &nbsp; <span class="note">Grocery Shopping</span></li>
+      </ul>
     </div>
-    <div class="image-row">
-      <img src="b-image-c.jpg" alt="Man on laptop">
+
+    <div class="actions">
+      <button>Transfer Funds</button>
+      <button>Download Statement</button>
+            <button>Deposit Check</button>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="#">Privacy, Cookies, Security, & Legal</a> | 
+                <a href="#">Sitemap</a> | 
+                <a href="#">Do Not Sell or Share My Personal Information</a> | 
+                <a href="#">About Wells Fargo</a> | 
+                <a href="#">Notice of Data Collection</a> | 
+                <a href="#">Careers</a> | 
+                <a href="#">General Terms of Use</a> | 
+                <a href="#">Inclusion & Accessibility</a> | 
+                <a href="#">Report Fraud</a> | 
+                <a href="#">Home</a>
+            </div>
+            <hr>
+            <p>© 1999 - 2025 Wells Fargo Bank. All rights reserved. NMLSR ID 399801</p>
+        </footer>
     </div>
-    <!-- <div class="award-badge">
-      <img src="badge-icon.svg" alt="Award badge">
-    </div> -->
-  </div>
-</section>
 </body>
 </html>
